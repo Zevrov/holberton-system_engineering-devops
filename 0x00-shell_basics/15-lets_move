@@ -1,3 +1,3 @@
 #!/bin/bash
-mv [A-Z]* -t /tmp/u
+mv -tx [A-Z]* /tmp/u
 
