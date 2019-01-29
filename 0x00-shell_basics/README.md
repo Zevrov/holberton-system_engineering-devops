@@ -1,7 +1,7 @@
 ###READ ME for 0x00 shell basics
 ####author: Wolf Hopkins
 
-####Explanations for each file in the project
+####Explanations for each script in the project
 
 ###0
 ```
