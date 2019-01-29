@@ -1,2 +1,2 @@
-#! /bin/bash
-ls -a -f -l $PWD .. /boot
+#!/bin/bash
+ls -a  -l . .. /boot
