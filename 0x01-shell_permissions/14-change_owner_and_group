@@ -1,3 +1,2 @@
 #!/bin/bash
-sudo chown betty *
-sudo chgrp holberton *
+chown betty:holberton *
