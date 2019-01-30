@@ -1,4 +1,2 @@
 #!/bin/bash
-if [find -uname guillaume]
-then chown betty hello
-else echo There is no guillaume here
+chown --from guillaume hello betty
