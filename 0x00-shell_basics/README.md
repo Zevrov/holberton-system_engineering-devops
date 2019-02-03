@@ -13,12 +13,12 @@ Will show your current location
 Will display the contents list of your current directory
 ```
 
-###2
+### 2
 ```
 Changes the working directory to the user's home directory
 ```
 
-###3
+### 3
 ```
 Displays the current directory in the long format
 ```
