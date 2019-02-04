@@ -74,6 +74,6 @@ a script that prints every other line from the input, starting with the first li
 # 102-water\_and\_stir 
 ```
 a shell script that adds the two numbers stored in the environment variables WATER and STIR and prints the result.
-```￼￼￼
+￼￼￼
 
 
