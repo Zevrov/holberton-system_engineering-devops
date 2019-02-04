@@ -1,1 +1,2 @@
 #!/bin/bash
+print env
