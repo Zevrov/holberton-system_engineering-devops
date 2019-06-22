@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Print a string 10 times, hi on the 9th
+
+index=0
+while (( index < 10 )); do
+	echo "Holberton School"
+	if (( index == 8 )); then
+		echo "Hi"
+	fi
+	(( index++ ))
+done

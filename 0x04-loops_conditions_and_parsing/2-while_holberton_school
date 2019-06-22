@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Print a string 10 times with a while loop
+
+index=0
+while [  $index -lt 10  ]; do
+	echo "Holberton School"
+	(( index++ ))
+done

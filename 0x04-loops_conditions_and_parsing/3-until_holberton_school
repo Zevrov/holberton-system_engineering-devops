@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Print a string 10 times with an until loop
+
+index=0
+until [  $index -gt 9  ]; do
+	echo "Holberton School"
+	(( index++ ))
+done

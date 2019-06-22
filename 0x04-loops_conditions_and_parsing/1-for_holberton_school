@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-# Print a string ten times
+# This script is displaying "Holberton School" 10 times
 
-for _ in {0..9}; do
+index = 0
+for index in {0..9}; do
 	echo "Holberton School"
+	(( index++ ))
 done
