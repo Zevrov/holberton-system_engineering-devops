@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# FizzBuzz
+
+index = 1
+while (( index < 101));
+do
+	if (( NUMBER % 15 == 0 ));
+	then
+		echo "FizzBuzz"
+	elif (( index % 5 == 0 ));
+	then
+		echo "Buzz"
+	elif (( index % 3 == 0 ));
+	then
+		echo "Fizz"
+	else
+		echo "$index"
+	fi
+	index++
+done
