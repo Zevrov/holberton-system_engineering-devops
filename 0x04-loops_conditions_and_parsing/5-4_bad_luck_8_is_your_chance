@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# surprise at 4 and 8
+
+index=1
+while [[  $index -lt 11  ]]; do
+	if [[  $index = 4  ]]; then
+		echo "bad luck"
+	elif [[  $index = 8  ]]; then
+		echo "good luck"
+	else
+		echo "Holberton School"
+	fi
+	(( index++ ))
+done
