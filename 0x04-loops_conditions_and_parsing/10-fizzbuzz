@@ -2,8 +2,7 @@
 # FizzBuzz but in bash
 
 index = 1
-while (( index < 101));
-do
+while (( index < 101 )); do
 	if (( NUMBER % 15 == 0 ));
 	then
 		echo "FizzBuzz"
