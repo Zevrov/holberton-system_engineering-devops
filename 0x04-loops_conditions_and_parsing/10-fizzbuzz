@@ -15,5 +15,5 @@ while (( index < 101 )); do
 	else
 		echo "$index"
 	fi
-	index++
+	(( index++ ))
 done
