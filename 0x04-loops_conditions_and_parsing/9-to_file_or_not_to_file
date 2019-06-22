@@ -1,17 +1,14 @@
 #!/usr/bin/env bash
 # simple file information script
 
-if [  -e "holbertonschool"  ]
-then
+if [[  -e "holbertonschool"  ]]; then
 	echo "holbertonschool file exists"
-	if [  -s "holbertonschool"  ]
-	then
+	if [[  -s "holbertonschool"  ]]; then
 		echo "holbertonschool file is not empty"
 	else
 		echo "holbertonschool file is empty"
 	fi
-	if [  -f "holbertonschool"  ]
-	then
+	if [[  -f "holbertonschool"  ]]; then
 		echo "holbertonschool is a regular file"
 	fi
 else
