@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Using case statement to print numbers
+
+index=1
+while [[  $index -lt 21  ]]; do
+	echo $index
+	case "$index" in
+		4)
+			echo "bad luck from China"
+			;;
+		9)
+			echo "bad luck from Japan"
+			;;
+		17)
+			echo "bad luck from Italy"
+			;;
+	esac
+	(( index++))
+done
