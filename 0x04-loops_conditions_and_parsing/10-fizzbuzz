@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# FizzBuzz
+# FizzBuzz but in bash
 
 index = 1
 while (( index < 101));
