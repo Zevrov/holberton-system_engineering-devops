@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Using case statement to print numbers
+# printing out numbers if they are ok
 
 index=1
 while [[  $index -lt 21  ]]; do
