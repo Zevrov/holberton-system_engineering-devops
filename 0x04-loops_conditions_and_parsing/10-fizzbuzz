@@ -3,10 +3,10 @@
 
 index=1
 while (( index < 101 )); do
-	if  (( index % 5 == 0 ));
+	if (( index % 5 == 0 ));
 	then
 		echo "Buzz"
-	elif  (( index % 15 == 0 ));
+	elif (( index % 15 == 0 ));
 	then
 		echo "FizzBuzz"
 	elif (( index % 3 == 0 ));
