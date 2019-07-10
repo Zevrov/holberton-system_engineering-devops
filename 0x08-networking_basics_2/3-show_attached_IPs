@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# print the IP addresses of attached network interfaces
+ifconfig | grep --only-matching --perl-regexp "(?<=inet addr:)\S+"
