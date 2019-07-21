@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Configs a server with custom req
-sudo cp /etc/hosts /tmp/hosts.olddd
-echo -e "127.0.0.2\tlocalhost\n8.8.8.8\tfacebook.com" > /tmp/hosts.new
-cp --force /tmp/hosts.olddd /etc/hosts
+echo -e "127.0.0.2\tlocalhost"> /tmp/hosts.new
+echo -e "8.8.8.8\tfacebook.com">> /tmp/hosts.new
+cat /etc/hosts >> /tmp/hosts.new
+cp -f /tmp/hosts.new /etc/hosts
