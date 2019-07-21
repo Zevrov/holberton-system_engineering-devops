@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# sash script to display listening ports
-netstat -lp
+# bash script to display listening ports
+netstat --listening --program
