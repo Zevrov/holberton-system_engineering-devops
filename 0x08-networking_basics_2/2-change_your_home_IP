@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # Configs a server with custom req
-echo -e "127.0.0.2\tlocalhost"> /tmp/hosts.new
-echo -e "8.8.8.8\tfacebook.com">> /tmp/hosts.new
-cat /etc/hosts >> /tmp/hosts.new
-cp -f /tmp/hosts.new /etc/hosts
+cp /etc/hosts ~/tempor | grep -vx '127.*localhost' /etc/hosts > /tmp/hold
+echo '127.0.0.2 localhost' > ~/tempor
+echo '8.8.8.8 facebook.com' >> ~/tempor
+cat /tmp/hold >> ~/tempor
+cp ~/tempor /etc/hosts
+rm ~/tempor
+rm /tmp/hold
