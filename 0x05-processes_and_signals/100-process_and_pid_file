@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 # script for Holberton
+
 trap 'echo Y U no love me?!' SIGINT
 trap 'rm $file; exit' SIGQUIT
 trap 'echo I hate the kill command; rm $file; exit' SIGTERM
 
-echo "$$"" > /var/run/holbertonscript.pid
+echo "$$" > /var/run/holbertonscript.pid
 while true; do
 	echo To infinity and beyond
 	sleep 2
