@@ -1,4 +1,4 @@
-# create a file in tmp
+# create a file in /tmp/
 file { 'temporary file':
 	ensure  => file,
 	path    => '/tmp/holberton',
