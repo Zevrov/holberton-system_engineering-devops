@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# login ssh with specified key
+
+ssh -i ~/.ssh/holberton ubuntu@35.227.98.159
