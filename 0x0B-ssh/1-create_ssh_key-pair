@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# login ssh with specified key
+
+ssh-keygen -b 4096 -N betty -t rsa -f holberton
