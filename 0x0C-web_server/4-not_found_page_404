@@ -20,7 +20,7 @@ server {
 }
 EOF
 mkdir --parents /var/www/html
-echo 'Holberton School' > /var/www/html/index.html
-echo 'Ceci n'\''est pas une page' > /var/www/html/404.html
+echo 'Holberton School' > /usr/share/nginx/html/index.html
+echo 'Ceci n'\''est pas une page' > /usr/share/nginx/html/404.html
 service nginx reload
 service nginx restart
