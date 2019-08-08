@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# redirect to another page
+
+apt-get -y update
+apt-get -y install nginx
+mkdir --parents /var/www/html
+echo 'Holberton School' > /var/www/html/index.html
+service nginx restart
+string="server_name _;\n\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=MKuELPxZHHU;\n\t}\n"
+sed -i "s,server_name _;,$string," /etc/nginx/sites-available/default
+service nginx restart
