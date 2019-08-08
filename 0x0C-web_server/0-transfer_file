@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# script transfer files to server 
+# script transfer files to server
 
 PATH_TO_FILE=$1
 IP=$2
@@ -10,6 +10,6 @@ if (( $# < 3 ));
     then
         echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
 else
-    scp -i "$SSH_PATH" -o StrictHostKeyChecking=no \
-    "$PATH" "$USR"@"$PATH":~/
+    scp -i "$PATH_TO_SSH_KEY" -o StrictHostKeyChecking=no \
+    "$PATH_TO_FILE" "$USR"@"$IP":~/
 fi
