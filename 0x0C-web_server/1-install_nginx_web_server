@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # installs nginx on a server
+
 apt-get -y update
 apt-get -y install nginx
-mkdir --parents /var/www/html
+touch /var/www/html/index.html
 echo 'Holberton School' > /var/www/html/index.html
 service nginx restart
