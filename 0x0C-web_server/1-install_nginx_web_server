@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # installs nginx on a server
 
-apt-get update
-apt-get install -y nginx
+apt-get -y update
+apt-get -y install nginx
 touch /var/www/html/index.html
 echo 'Holberton School' > /var/www/html/index.html
 service nginx reload
