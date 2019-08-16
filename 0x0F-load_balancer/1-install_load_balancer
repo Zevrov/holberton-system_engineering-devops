@@ -6,6 +6,7 @@ sudo apt-get -y install 'haproxy'
 cat > '/etc/haproxy/haproxy.cfg' << EOF
 frontend wolfhopkins.tech
 	bind *:80
+	stats uri /haproxy?stats
 	default_backend web_servers
 backend web_servers
 	balance roundrobin
