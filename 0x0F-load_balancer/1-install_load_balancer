@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# set up haproxy
+
+sudo apt-get -y update
+sudo apt-get -y install 'haproxy'
+cat > '/etc/haproxy/haproxy.cfg' << EOF
+global
+	maxconn 2000
+	user haproxy
+	group haproxy
+defaults
+	mode http
+	retries 5
+	timeout connect 5s
+	timeout client 60s
+	timeout server 60s
+frontend third-serenade.tech
+	bind *:80
+	default_backend web_servers
+backend web_servers
+	balance roundrobin
+	server web-01 35.229.22.85:80
+	server web-02 34.74.166.73:80
+EOF
+update-rc.d haproxy defaults
+service haproxy reload
+service haproxy restart
