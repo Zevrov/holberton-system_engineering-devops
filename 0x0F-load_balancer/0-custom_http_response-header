@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Installing nginx in different server
+
+apt-get -y update
+apt-get -y install nginx
+sed -i "26i add_header X-Served-By \$hostname;" /etc/nginx/nginx.conf
+service nginx restart
