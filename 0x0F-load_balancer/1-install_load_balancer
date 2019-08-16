@@ -4,16 +4,6 @@
 sudo apt-get -y update
 sudo apt-get -y install 'haproxy'
 cat > '/etc/haproxy/haproxy.cfg' << EOF
-global
-	maxconn 2000
-	user haproxy
-	group haproxy
-defaults
-	mode http
-	retries 5
-	timeout connect 5s
-	timeout client 60s
-	timeout server 60s
 frontend wolfhopkins.tech
 	bind *:80
 	default_backend web_servers
@@ -22,4 +12,5 @@ backend web_servers
 	server web-01 34.73.58.99
 	server web-02 35.231.152.200
 EOF
+service haproxt reload
 service haproxy restart
