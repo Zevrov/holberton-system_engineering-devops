@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# configure a server with Nginx, a redirect, and a custom 404 page
+# set up a web server
 
 apt-get update
 apt-get --yes install 'nginx'
@@ -21,5 +21,4 @@ EOF
 mkdir --parents '/var/www/html'
 echo 'Holberton School' > '/var/www/html/index.html'
 echo 'Ceci n'\''est pas une page' > '/var/www/html/404.html'
-service nginx reload
 service nginx restart
