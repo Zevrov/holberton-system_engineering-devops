@@ -10,7 +10,7 @@ frontend wolfhopkins.tech
 backend web_servers
 	balance roundrobin
 	server web-01 34.73.58.99
-	server web-02 35.231.152.200
+	server web-02 34.74.6.218
 EOF
 service haproxt reload
 service haproxy restart
