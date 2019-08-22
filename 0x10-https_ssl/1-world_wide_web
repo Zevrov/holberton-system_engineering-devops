@@ -1,0 +1,20 @@
+#!/usr/bin/bash env
+# get info about holberton student domains
+
+
+subs = (www lb-01 web-01 web-02)
+
+
+dom_info() {
+    R_TYPE=$(dig "$1" | awk '/[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/ {print $4}')
+    DEST=$(dig "$1" | awk '/[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/ {print $5}')
+    SUB="$2"
+    echo "The subdomain ${SUB} is a ${R_TYPE} record and points to ${DEST}"
+}
+
+if (( $# > 1 )); then
+    d_info "$2.$1" "$2"
+else
+    for item in "${subs[@]}"; do
+        dom_info "{item}.${1}" "{item}"
+fi
