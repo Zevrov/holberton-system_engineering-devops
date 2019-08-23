@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# dont run root, run as nginx
+
+chmod 644 /etc/nginx/nginx.conf
+pkill 'apache2'
+sed -i 's| 80 | 8080 |' /etc/nginx/sites-available/default
+sed -i 's|:80 |:8080 |' /etc/nginx/sites-available/default
+service nginx start
