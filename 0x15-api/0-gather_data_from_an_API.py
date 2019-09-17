@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """pulls todo from a given employee id"""
 
-from sys import argv
 import requests
+from sys import argv
+
 
 if __name__ == "__main__":
     employeeRequest = requests.get(
