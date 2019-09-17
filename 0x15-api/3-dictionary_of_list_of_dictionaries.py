@@ -17,7 +17,7 @@ if __name__ == "__main__":
         "https://jsonplaceholder.typicode.com/todos")
     todoList = todoRequest.json()
 
-    task_data = []
+    taskData = []
     jsonData = collections.OrderedDict()
 
     for person in employeeDict:
