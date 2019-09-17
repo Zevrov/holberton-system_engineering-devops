@@ -26,7 +26,7 @@ if __name__ == "__main__":
                 taskDict = {
                     "username": person.get("username"),
                     "task": thing.get("title"),
-                    "completed": thing.get("completed"),}
+                    "completed": thing.get("completed"), }
                 taskData.append(taskDict)
         jsonData["{}".format(person.get("id"))] = taskData
         taskData = []
