@@ -18,7 +18,6 @@ if __name__ == "__main__":
     completedTasks = [
         dict for dict in todoList if dict.get("completed") is True]
 
-
     print('Employee {} is done with tasks({}/{}):'.format(
         employeeName,
         len(completedTasks),
