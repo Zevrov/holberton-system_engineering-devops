@@ -10,11 +10,11 @@ import sys
 
 if __name__ == "__main__":
     employeeRequest = requests.get(
-        "https://jsonplaceholder.typicode.com/users/" + argv[1])
+        "https://jsonplaceholder.typicode.com/users/")
     employeeDict = employeeRequest.json()
 
     todoRequest = requests.get(
-        "https://jsonplaceholder.typicode.com/todos?userId=" + argv[1])
+        "https://jsonplaceholder.typicode.com/todos")
     todoList = todoRequest.json()
 
     task_data = []
