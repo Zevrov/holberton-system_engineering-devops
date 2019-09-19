@@ -10,6 +10,7 @@ def top_ten(subreddit):
     response = requests.get(path, allow_redirects=False, headers=headers)
     if response.status_code in (302, 404):
         print(None)
+        return
 
     json = response.json()
     json_children = json.get('data').get('children')
