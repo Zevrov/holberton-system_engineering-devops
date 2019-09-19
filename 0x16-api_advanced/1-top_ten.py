@@ -9,7 +9,7 @@ def top_ten(subreddit):
     headers = {'User-agent': 'Mozilla/5.0'}
     response = requests.get(path, allow_redirects=False, headers=headers)
     if response.status_code in (302, 404):
-        return 0
+        print("None")
 
     json = response.json()
     json_children = json.get('data').get('children')
