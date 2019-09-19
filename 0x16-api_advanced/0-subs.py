@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""ask reddit api the number of subscribers"""
+"""query reddit api"""
 import requests
 
 
@@ -10,5 +10,6 @@ def number_of_subscribers(subreddit):
     response = requests.get(path, allow_redirects=False, headers=headers)
     if response.status_code in (302, 404):
         return 0
+
     json = response.json()
     return json.get('data').get('subscribers')
