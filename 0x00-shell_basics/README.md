@@ -67,19 +67,19 @@ Creates a symbolic link to /bin/ls, named __ls__, in the current directory
 ```
 Copies all the HTML files from the current working directory to the parent of the working directory, but only copies files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.
 ```
-###15
+### 15
 ```
 Moves all files beginning with an uppercase letter to the directory /tmp/u
 ```
-###16
+### 16
 ```
 Deletes all files in the current working directory that end with the character ~
 ```
-###17
+### 17
 ```
 Creates the directories welcome/, welcome/to/ and welcome/to/holberton in the current directory
 ```
-###18
+### 18
 ```
 Lists all the files and directories of the current directory, separated by commas
 ```
